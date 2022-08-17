@@ -1,0 +1,26 @@
+{% extends 'html/layout.html' %}
+
+
+{% block content %}
+
+
+<!-- <div class="col-md-6 offset-md-3 h-100 d-flex justify-content-center align-items-center"> -->
+    <form action="{% url 'result' %}" class="d-grid gap-3 align-items-around">
+        <h1>Consulta de Horas de Servicio</h1>
+        
+        <!-- <label for="correo">Escribe tu correo</label>
+        <input style="outline: 0;" class="border-0 border-bottom border-2 border-secondary" type="email" name="correo" id="correo"> -->
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="correo">
+            <label for="floatingInput">Escribe tu correo</label>
+          </div>
+
+        <!-- <label for="correo">Escribe tu correo</label>
+        <input style="outline: 0;" class="border-0 border-bottom border-2 border-secondary" type="email" name="correo" id="correo"> -->
+        
+        <button class="btn btn-primary my-2">Consultar</button>
+    </form>
+<!-- </div> -->
+
+{% endblock %}
